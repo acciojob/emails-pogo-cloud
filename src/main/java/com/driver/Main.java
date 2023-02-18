@@ -26,7 +26,7 @@ public class Main {
         gmail.emptyTrash();
         System.out.println("There are " + gmail.getTrashSize() + " mails in the trash.");
 
-        Workspace workspace = new Workspace("accio@gmail.com");
+        Workspace workspace = new Workspace("accio@gmail.com",10);
         System.out.println("Inbox capacity is " + workspace.getInboxCapacity() + " in workspace.");
 
         workspace.addMeeting(new Meeting(LocalTime.parse("17:40"), LocalTime.parse("18:40")));
